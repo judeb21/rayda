@@ -1,5 +1,5 @@
 import React, { Fragment, useState } from 'react';
-import { Box, Button, Grid, Typography, Skeleton } from '@mui/material';
+import { Box, Grid } from '@mui/material';
 import ItemHeader from './ItemHeader';
 import ItemCard from './ItemCard';
 
@@ -70,15 +70,15 @@ function FeaturedContent(props) {
         <ItemHeader />
 
         {/* item content */}
-          <Fragment>
-            <Grid container wrap="wrap" sx={{ gridGap: 25, mt: 25 }}>
-              {(loading ? Array.from(new Array(4)) : data).map((item, index) => (
+        <Fragment>
+          <Grid container wrap="wrap" sx={{ gridGap: 25, mt: 25 }}>
+            {(loading ? Array.from(new Array(4)) : data).map((item, index) => (
 
-                // Item Card Features
-                <ItemCard key={index} item={item} index={index}></ItemCard>
-              ))}
-            </Grid>
-          </Fragment>
+              // Item Card Features
+              <ItemCard key={index} item={item} index={index}></ItemCard>
+            ))}
+          </Grid>
+        </Fragment>
         
       </Box>
     </Fragment>

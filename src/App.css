@@ -35,3 +35,8 @@ body {
   padding: 0 28px;
   padding-bottom: 25px;
 }
+
+.acuctionHeader {
+  height: 192px;
+  border-radius: 12px;
+}

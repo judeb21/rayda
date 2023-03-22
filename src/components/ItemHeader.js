@@ -33,7 +33,7 @@ function ItemHeader() {
               boxShadow: "0px 1px 2px rgba(16, 24, 40, 0.05)",
               borderRadius: "8px",
               color: "#344054",
-              fontSize: "12px",
+              fontSize: "14px",
               letterSpacing: 0,
               lineHeight: "20px",
               fontWeight: "600",

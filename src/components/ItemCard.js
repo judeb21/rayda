@@ -163,7 +163,7 @@ export default function ItemCard({ item, index }) {
         )}
 
         {item ? (
-          <CardActions>
+          <CardActions sx={{ padding: '8px 0' }}>
             <Button
               variant="contained"
               color="primary"
