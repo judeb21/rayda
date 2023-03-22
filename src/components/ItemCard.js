@@ -58,7 +58,8 @@ export default function ItemCard({ item, index }) {
           <CardMedia
             component="img"
             width="100%"
-            height="132"
+            height="132px"
+            sx={{ borderRadius: '8px' }}
             image={item.src}
             alt={item.title}
           />
