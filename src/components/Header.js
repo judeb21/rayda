@@ -30,7 +30,13 @@ export default function Header() {
         </Box>
 
         <Box
-          sx={{ display: "flex", flex: 1, width: "100%", position: "relative", height: 110 }}
+          sx={{
+            display: "flex",
+            flex: 1,
+            width: "100%",
+            position: "relative",
+            height: 110,
+          }}
         >
           <Avatar
             alt="avatar"

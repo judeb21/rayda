@@ -8,12 +8,11 @@ import {
   Badge,
   Divider,
 } from "@mui/material";
-import NotificationsOutlinedIcon from "@mui/icons-material/NotificationsOutlined";
 
 export default function MainNav() {
   return (
     <Fragment>
-      <Box container mt={32}>
+      <Box mt={32}>
         <Box
           mb={20}
           sx={{

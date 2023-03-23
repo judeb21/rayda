@@ -1,4 +1,4 @@
-import React, { Fragment, useState } from "react";
+import React, { Fragment } from "react";
 import {
   Button,
   Card,
@@ -60,7 +60,7 @@ export default function ItemCard({ item, index }) {
             width="100%"
             height="132px"
             sx={{ borderRadius: '8px' }}
-            image={item.src}
+            image={item.image}
             alt={item.title}
           />
         ) : (
@@ -83,7 +83,7 @@ export default function ItemCard({ item, index }) {
                   marginRight: -8,
                 }}
               >
-                {AvatarInitials(item.channel)}
+                {AvatarInitials(item.name)}
               </Avatar>
             }
             titleTypographyProps={{
@@ -95,7 +95,7 @@ export default function ItemCard({ item, index }) {
               lineHeight: "18px",
               fontWeight: 600,
             }}
-            title={item.channel}
+            title={item.name}
             subheaderTypographyProps={{
               fontSize: 12,
               lineHeight: "18px",
@@ -153,7 +153,7 @@ export default function ItemCard({ item, index }) {
                   fontFamily: "IBM Plex Sans, sans-serif",
                 }}
               >
-                {item.currentbid}
+                {item.bid}
               </Typography>
             </Box>
 

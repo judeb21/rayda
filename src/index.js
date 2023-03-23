@@ -4,6 +4,8 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { ThemeProvider, createTheme } from '@mui/material';
+import { ApiProvider } from '@reduxjs/toolkit/query/react';
+import { apiSlice } from './api/apiSlice';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
@@ -31,9 +33,11 @@ const theme = createTheme({
 
 root.render(
   <React.StrictMode>
-    <ThemeProvider theme={theme}>
-      <App />
-    </ThemeProvider>
+    <ApiProvider api={apiSlice}>
+      <ThemeProvider theme={theme}>
+        <App />
+      </ThemeProvider>
+    </ApiProvider>
   </React.StrictMode>
 );
 
