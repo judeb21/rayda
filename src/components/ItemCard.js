@@ -31,7 +31,7 @@ export default function ItemCard({ item, index }) {
   };
 
   // Function to truncate string
-  const truncateString = (string, number = 62) => {
+  const truncateString = (string, number = 60) => {
     if (string && string.length > number) {
       return string.slice(0, number) + "...";
     }
